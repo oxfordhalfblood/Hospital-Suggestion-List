@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Zombie Illness Hospitals</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+  <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+
+  <!-- Your file css -->
+  <link rel="stylesheet" href="css/patientstyle.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="head" class="container">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="bg-dark p-4">
+            <h5 class="text-white h4"> <a href="/"> Find Treatment Quickest </a></h5>
+                <span class="text-muted">Get the hospital with least waiting time.</span>
+        </div>
+    </nav>
+  
+  <!-- <form action="/" method="post"> -->
+  <form name="myForm" action="/displayhospital" method="POST">
+    
+
+    <div class="flex-grid-thirds">
+
+            <div class="col">
+                    Hospital List
+                   <hr/>
+                       <div id = "hospitaldiv" class = "list-group">
+                           <% hospitals.each(function(k) { %>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                           <%= k.name %>
+                           <span class="badge badge-primary badge-pill"> 
+                           <%= k.time %>  
+                           </span>
+                           </li>                  
+                           <% }); %>           
+                       </div>
+                   </div>        
+
+      </div>
+
+ 
+
+        <!-- <input type="submit" value="Click here to submit the form"/> -->
+
+  </form> 
+  
+ 
+
+        <!-- <button type="submit" class="btn btn-primary mb-2">Go</button> -->
+ 
+  </div> 
+
+
+        
+<footer class="site-footer">
+  <div class="row-footer">
+      
+        <div class="social-links">
+                <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+            </div>
+        </div>
+</footer>
+
+
+
+<script src="js/functions.js"></script>	
+
+</body>
+</html>
+
+
+
+
+ <!-- <div class="col">
+         Hospital List
+        <hr/>
+            <div id = "hospitaldiv" class = "list-group">
+                <% hospitals.each(function(k) { %>
+                 <li class="list-group-item d-flex justify-content-between align-items-center">
+                <%= k.name %>
+                <span class="badge badge-primary badge-pill"> 
+                <%= k.time %>  
+                </span>
+                </li>                  
+                <% }); %>           
+            </div>
+        </div> -->
