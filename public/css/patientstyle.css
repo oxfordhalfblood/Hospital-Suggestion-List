@@ -1,1 +1,203 @@
 
+
+  body{
+    /* background-image: url('http://www.birds.com/wp-content/uploads/home/bird4.jpg'); */
+    background-image: url('https://image.freepik.com/free-photo/close-up-doctor-front-bright-background_53419-4824.jpg');
+    background-size:cover;
+    height: 100%;
+    /* padding-bottom: 70px; */
+  }
+  div {
+    margin: 20px 10px 10px 10px; 
+    border-radius: 10px;
+
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif;
+  }
+
+  p, div, span {
+      font-family: 'Solway', Helvetica, Arial, sans-serif; 
+  }
+
+  .container {
+    min-height: 100%;
+  /* equal to footer height */
+    margin-bottom: 30px;
+  }
+
+  .container:after {
+    content: "";
+    display: block;
+}
+
+#email-field {
+  width: 350px;
+  padding-left: 10px;
+}
+.list-group{
+    margin: 0px 10px 10px 10px;
+    max-height: 250px;
+    margin-bottom: 10px;
+    overflow-y:auto;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 1px;
+}
+
+li.active{
+  background:cyan;
+}
+.active {
+  background-color: #343a40;
+}
+
+.flex-grid-thirds {
+  display: flex;
+  /* flex-flow: row wrap; */
+  justify-content: space-between;
+}
+
+.flex-grid-thirds .col {
+  width: 32%;
+  transition-duration: .5s;
+}
+
+.flex-grid-thirds .col {
+  background: #FFC125;
+  /* background: #FFD700; #668014(green)*/
+  padding: 20px;
+  /* background-color: #3F3F3F; */
+  /* color: white; text color */
+}
+
+marquee{
+  border : 2px solid #ccc;
+  max-width : 250px ;
+  text-align : center ;
+  padding : 10px ;
+}
+
+#ill:hover, #severe:hover {
+  padding: 2% 2%;
+  margin: -0.5% -0.5%;
+  transition-duration: .5s;
+}
+
+
+.box-shadow--4dp {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
+    padding: 0px 5px 0px 5px;
+}
+
+/* Submit Button Contents */
+
+.btn-primary, .btn-primary:hover,  .btn-primary:visited {
+  background-color: rgba(20, 97, 168, 0.842) !important;
+  border-color: rgba(20, 97, 168, 0.842) !important;
+  font-family: 'Corben', Georgia, Times, serif;
+}
+
+.last {
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer Contents */
+
+.site-footer{
+  height: 142px; 
+}
+
+.site-footer {
+  background: #343a40;
+}
+
+/* waittime  */
+.badge-primary {
+  background-color: rgba(20, 97, 168, 0.842) !important;
+
+}
+
+.btn {
+  color: #fff;
+  /* background-color: green; */
+  /* background-color: rgba(20, 97, 168, 0.842); */
+
+
+}
+.social-links {
+  padding-top: 20px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  
+  /* color: #fff; */
+  /* text-shadow: 2px 2px 0px #fff; */
+  /* background-color: rgba(20, 97, 168, 0.842); */
+}
+.social-links i {
+  color: #fff;
+  
+}
+
+.fa {
+  color: #fff;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+.social-links a:hover {
+  /* background-color: #9c27b0; */
+  background-color: rgba(20, 97, 168, 0.842);
+  color: #fff;
+}
+
+/* Device issue design */
+
+@media(max-width: 1333px) {
+  .grid-item {
+    flex-basis: 33.33%;
+  }
+}
+
+@media(max-width: 1073px) {
+   .grid-item {
+    flex-basis: 33.33%;
+  }
+}
+
+@media(max-width: 815px) {
+  .grid-item {
+    flex-basis: 50%;
+  }
+}
+
+@media(max-width: 620px) {
+  .col {
+    clear: both;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto !important;
+  }
+}
+
+@media(max-width: 555px) {
+  .grid-item {
+    flex-basis: 100%;
+  }
+}
+
+
+/* v */
+
+
+/*
+    Multicoloured Hover Variations
+*/
