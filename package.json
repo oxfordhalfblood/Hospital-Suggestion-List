@@ -1,0 +1,30 @@
+{
+  "name": "paloit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "arraylist": "^0.1.0",
+    "avl": "^1.4.4",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "ejs": "^3.0.1",
+    "hashmap": "^2.4.0",
+    "hashtable": "git+https://github.com/fabrice102/node-hashtable.git",
+    "jquery": "^3.4.1",
+    "jsdom": "^15.2.1",
+    "morgan": "^1.9.1",
+    "multimap": "^1.1.0",
+    "mysql": "^2.17.1",
+    "request": "^2.88.0",
+    "sort-map": "^1.0.0",
+    "sorted-map": "^0.1.8",
+    "yargs": "^15.0.2"
+  }
+}
