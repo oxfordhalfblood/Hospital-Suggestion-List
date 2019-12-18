@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
+var config = require('./config.js');
 const morgan = require('morgan');
 const mysql = require('mysql');
 var router = express.Router();
@@ -45,15 +46,8 @@ app.get('/', function(req, res) {
 
 
 function getConnection(){
-    return mysql.createConnection(
-        {
-            host: 'localhost',
-            user: 'root',
-            password: 'password',
-            database: 'patientschem'
-        }
-
-    )
+    var connection = mysql.createConnection(config.databaseOptions);
+    return connection
 
 }
 
