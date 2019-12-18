@@ -16,20 +16,14 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `patient`
+-- Dumping data for table `patient`
 --
 
-DROP TABLE IF EXISTS `patient`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `patient` (
-  `email` varchar(45) NOT NULL,
-  `disease` varchar(45) DEFAULT NULL,
-  `painlevel` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`email`),
-  UNIQUE KEY `email_UNIQUE` (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
+LOCK TABLES `patient` WRITE;
+/*!40000 ALTER TABLE `patient` DISABLE KEYS */;
+INSERT INTO `patient` VALUES ('afrida1005@gmail.com','Impossible Ebola','Mild'),('afrida1009@gmail.com','Impossible Ebola','Mild');
+/*!40000 ALTER TABLE `patient` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -40,4 +34,4 @@ CREATE TABLE `patient` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-12-16 12:30:33
+-- Dump completed on 2019-12-18 10:56:36
