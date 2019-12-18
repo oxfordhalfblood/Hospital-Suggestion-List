@@ -5,7 +5,7 @@ FROM mysql:5.7
 LABEL Afrida Tabassum <afrida1009@gmail.com>
 
 # database = test and password for root = password
-ENV MYSQL_DATABASE=patientdb \
+ENV MYSQL_DATABASE=patientschem \
     MYSQL_ROOT_PASSWORD=password
 
 # when container will be started, we'll have `test` database created with this schema
