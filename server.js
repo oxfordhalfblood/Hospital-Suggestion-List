@@ -106,7 +106,7 @@ app.post('/displayhospital', (req, res) => {
             // res.render('index')
             //return
         }
-        console.log("inserted new patient "+results.insertId);
+        console.log("inserted new patient ");
         
         // res.end();
 
